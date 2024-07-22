@@ -13,7 +13,7 @@ print(str(AVGfen) + str("L/100Km"))
 
 # Convert to MPG
 
-AVGmpg = round(235.215/AVGfen)
+AVGmpg = round(235.215 // AVGfen)
 
 
 print(str(AVGmpg) + str("mpg"))
