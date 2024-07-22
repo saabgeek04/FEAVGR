@@ -16,14 +16,10 @@ def assignfens():
         fencount += 1 
     
 
-
-assignfens()
-
-print(fenList)
-
 def calculatefe():
 
     global lp100k
+    global mpg
     lcount = 0
     fensum = 0 
     pfensum = 0
@@ -32,15 +28,21 @@ def calculatefe():
         
         pfensum = fensum
 
-        fensum = fenList[lcount] +  
+        fensum = int(fenList[lcount]) + int(pfensum)
 
-        print("pfensum: ", pfensum)
-        print("fensum: ", fensum)
-
-        lcount += 1 
-
-calculatefe()
+        lcount += 1
     
+    lp100k = int(fensum) // int(tc) 
+
+    mpg = round(235.215 // lp100k)  
+
+
+assignfens()
+calculatefe()
+
+print("Your fuel economy averages are...")
+print(lp100k, "L/100km")
+print(mpg, "mpg")
 
 
 
