@@ -1,3 +1,5 @@
+
+
 tc = input("input number of trips: ")
 
 
