@@ -1,9 +1,49 @@
 
 
-tc = input("input number of trips: ")
+
 
 
 def assignfens():
+
+    global unittpye
+    unittype = 0
+
+    print("[1] L/100km")
+    print("[2] km/L")
+    print("[3] mpg (UK)")
+    print("[4] mpg (US)")
+
+    fentype = input("Select the number corresponding to the unit you would like: ")
+
+    while unittype == 0:
+
+        if fentype == "1":
+            print("You have Selected L/100km")
+            unittype = 1 
+
+        elif fentype == "2":
+            print("You have selected km/L")
+            unittype = 2 
+
+        elif fentype == "3":
+            print("You have selected mpg (UK)")
+            unittpye = 3
+
+        elif fentype == "4":
+            print("You have selected mpg (US)")
+            unittpye = 4 
+
+        else:
+            print("Invalid Input, Try again")
+            assignfens()
+
+        
+
+
+    global tc
+    tc = input("input number of trips: ")
+
+    
     global fencount
     global fenList
     fencount = 0
@@ -18,6 +58,7 @@ def assignfens():
 
 def calculatefe():
 
+    
     global lp100k
     global mpg
     lcount = 0
