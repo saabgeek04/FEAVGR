@@ -1,0 +1,10 @@
+
+
+Get an input
+
+check if the input is an integer and reject it if it isnt
+
+check that the integer is within a range of 1 and 4 and reject if it isnt
+
+
+

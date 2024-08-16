@@ -13,31 +13,48 @@ def assignfens():
     print("[3] mpg (UK)")
     print("[4] mpg (US)")
 
-    fentype = input("Select the number corresponding to the unit you would like: ")
+    fentype = 0
 
-    while unittype == 0:
 
-        if fentype == "1":
-            print("You have Selected L/100km")
-            unittype = 1 
+    # while unittype == 0:
 
-        elif fentype == "2":
-            print("You have selected km/L")
-            unittype = 2 
+    #     if fentype == "1":
+    #         print("You have Selected L/100km")
+    #         unittype = 1 
 
-        elif fentype == "3":
-            print("You have selected mpg (UK)")
-            unittpye = 3
+    #     elif fentype == "2":
+    #         print("You have selected km/L")
+    #         unittype = 2 
 
-        elif fentype == "4":
-            print("You have selected mpg (US)")
-            unittpye = 4 
+    #     elif fentype == "3":
+    #         print("You have selected mpg (UK)")
+    #         unittpye = 3
 
-        else:
-            print("Invalid Input, Try again")
-            assignfens()
+    #     elif fentype == "4":
+    #         print("You have selected mpg (US)")
+    #         unittpye = 4 
+
+    #     else:
+    #         print("Invalid Input, Try again")
+    #         assignfens()
 
         
+    while True:
+
+        fentype = input("Select the number corresponding to the unit you would like: ")
+
+        if fentype.isdigit() False:
+    
+
+            
+
+            
+
+        # print("invalid")
+    
+
+    else:
+        print("valid")    
 
 
     global tc
@@ -79,7 +96,7 @@ def calculatefe():
 
 
 assignfens()
-calculatefe()
+# calculatefe()
 
 print("Your fuel economy averages are...")
 print(lp100k, "L/100km")
